@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Presentation</title>
+</head>
+
+<body>
+
+    <div class="presentation">
+        <!-- Slide 1: Introduction to HTML Forms -->
+        <section class="slide" id="slide1">
+            <h1>Introduction to HTML Forms</h1>
+            <p>HTML forms are used to collect user input and send it to a server.</p>
+        </section>
+
+        <!-- Slide 2: Basic Form Structure -->
+        <section class="slide" id="slide2">
+            <h2>Basic Form Structure</h2>
+            <p>A basic HTML form consists of the <code>&lt;form&gt;</code> element with various input fields.</p>
+            <pre>
+&lt;form action="submit.php" method="POST"&gt;
+  &lt;input type="text" name="username" placeholder="Username"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+    </pre>
+        </section>
+
+        <!-- Slide 3: Input Types -->
+        <section class="slide" id="slide3">
+            <h2>Common Input Types</h2>
+            <p>HTML forms support various types of inputs:</p>
+            <ul>
+                <li><code>text</code> - Single-line text input</li>
+                <li><code>password</code> - Hidden characters for passwords</li>
+                <li><code>email</code> - Validates email format</li>
+                <li><code>radio</code> - Select one option from a set</li>
+                <li><code>checkbox</code> - Multiple selection</li>
+            </ul>
+        </section>
+
+        <!-- Slide 4: Example Form -->
+        <section class="slide" id="slide4">
+            <h2>Example Form</h2>
+            <p>Here’s a simple form example:</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email"><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <select name="education" id="">
+                    <option value="elementary">Select your education</option>
+                    <option value="highschool">High School</option>
+                    <option value="college">College</option>
+                    <option value="university">University</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="doctorate">Doctorate</option>
+                </select>
+                <br><br>
+
+                <label for="age">Image:</label> <br>
+                <input type="file" id="image" name="image"><br><br>
+
+                <label for="age">Message:</label> <br>
+                <textarea id="message" name="message" placeholder="Your message" cols="12" rows="4"></textarea><br><br>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Slide 5: Conclusion -->
+        <section class="slide" id="slide5">
+            <h2>Conclusion</h2>
+            <p>HTML forms are essential for collecting user input and handling user interactions on the web.</p>
+            <p>Experiment with different form elements and attributes to enhance your web projects!</p>
+        </section>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links with Target Attribute and IDs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        .section-content {
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Links - The Target Attribute and IDs</h1>
+
+    <!-- Navigation links -->
+    <h2>Navigation Links</h2>
+    <a href="#section1">Go to Section 1</a>
+    <a href="#section2">Go to Section 2</a>
+    <a href="#section3">Go to Section 3</a>
+
+    <!-- Absolute Links -->
+    <h2>Absolute Links</h2>
+    <!-- Link that opens in the same window/tab (default behavior) -->
+    <a href="https://www.example.com" target="_self">Open Example.com in the same window/tab</a>
+
+    <!-- Link that opens in a new window or tab -->
+    <a href="https://www.example.com" target="_blank">Open Example.com in a new window/tab</a>
+
+    <!-- Link that opens in the parent frame (useful if embedded in an iframe) -->
+    <a href="https://www.example.com" target="_parent">Open Example.com in the parent frame</a>
+
+    <!-- Link that opens in the full body of the window (useful if embedded in an iframe) -->
+    <a href="https://www.example.com" target="_top">Open Example.com in the full window</a>
+
+    <!-- Relative Links -->
+    <h2>Relative Links</h2>
+    <!-- Link to a relative path in the same directory -->
+    <a href="about.html" target="_self">Open About Page (relative link in the same directory)</a>
+
+    <!-- Link to a relative path in a subdirectory -->
+    <a href="docs/manual.pdf" target="_blank">Open User Manual (relative link in a subdirectory)</a>
+
+    <!-- Link to a relative path in the parent directory -->
+    <a href="../index.html" target="_parent">Open Index Page (relative link in the parent directory)</a>
+
+    <!-- Link to a relative path in the root directory -->
+    <a href="/contact.html" target="_top">Open Contact Page (relative link in the root directory)</a>
+
+    <!-- Sections with IDs -->
+    <section id="section1" class="section-content">
+        <h2>Section 1</h2>
+        <p>This is the content of Section 1. You can navigate here using the link above.</p>
+    </section>
+
+    <section id="section2" class="section-content">
+        <h2>Section 2</h2>
+        <p>This is the content of Section 2. You can navigate here using the link above.</p>
+    </section>
+
+    <section id="section3" class="section-content">
+        <h2>Section 3</h2>
+        <p>This is the content of Section 3. You can navigate here using the link above.</p>
+    </section>
+
+</body>
+
+</html>
